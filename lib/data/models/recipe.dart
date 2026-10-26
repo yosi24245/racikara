@@ -144,6 +144,8 @@ class Recipe {
   final List<Ingredient> ingredients;
   final List<String> steps;
   final List<String> tags;
+  final List<String> positiveImpacts;
+  final List<String> negativeImpacts;
   final String? videoUrl;
   final String? source;
   final String? imageCredit;
@@ -162,6 +164,8 @@ class Recipe {
     required this.ingredients,
     required this.steps,
     this.tags = const [],
+    this.positiveImpacts = const [],
+    this.negativeImpacts = const [],
     this.videoUrl,
     this.source,
     this.imageCredit,
@@ -190,6 +194,12 @@ class Recipe {
       tags: (json['tags'] as List<dynamic>? ?? [])
           .map((e) => e.toString())
           .toList(),
+      positiveImpacts: (json['positiveImpacts'] as List<dynamic>? ?? [])
+          .map((e) => e.toString())
+          .toList(),
+      negativeImpacts: (json['negativeImpacts'] as List<dynamic>? ?? [])
+          .map((e) => e.toString())
+          .toList(),
       videoUrl: json['videoUrl'] as String?,
       source: json['source'] as String?,
       imageCredit: json['imageCredit'] as String?,
@@ -210,6 +220,8 @@ class Recipe {
         'ingredients': ingredients.map((e) => e.toJson()).toList(),
         'steps': steps,
         'tags': tags,
+        'positiveImpacts': positiveImpacts,
+        'negativeImpacts': negativeImpacts,
         if (videoUrl != null) 'videoUrl': videoUrl,
         if (source != null) 'source': source,
         if (imageCredit != null) 'imageCredit': imageCredit,
@@ -229,6 +241,8 @@ class Recipe {
     List<Ingredient>? ingredients,
     List<String>? steps,
     List<String>? tags,
+    List<String>? positiveImpacts,
+    List<String>? negativeImpacts,
     String? videoUrl,
     String? source,
     String? imageCredit,
@@ -247,6 +261,8 @@ class Recipe {
       ingredients: ingredients ?? this.ingredients,
       steps: steps ?? this.steps,
       tags: tags ?? this.tags,
+      positiveImpacts: positiveImpacts ?? this.positiveImpacts,
+      negativeImpacts: negativeImpacts ?? this.negativeImpacts,
       videoUrl: videoUrl ?? this.videoUrl,
       source: source ?? this.source,
       imageCredit: imageCredit ?? this.imageCredit,

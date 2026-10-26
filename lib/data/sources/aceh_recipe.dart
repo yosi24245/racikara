@@ -17,6 +17,17 @@ const List<Recipe> kAcehRecipes = [
     cookTimeMinutes: 30,
     servings: 4,
     tags: ['mie', 'pedas', 'rempah', 'kari', 'daging', 'udang'],
+    positiveImpacts: [
+      'Mengandung karbohidrat sebagai sumber energi.',
+      'Daging dan udang dapat menyediakan protein.',
+      'Membantu meningkatkan usaha kuliner dan pendapatan masyarakat.',
+      'Memperkenalkan kuliner Aceh kepada wisatawan.',
+    ],
+    negativeImpacts: [
+      'Penggunaan minyak dan garam berlebihan dapat mengurangi manfaat kesehatannya.',
+      'Bumbu yang terlalu pedas dapat menyebabkan ketidaknyamanan pencernaan pada sebagian orang.',
+      'Konsumsi berlebihan tanpa makanan bergizi lainnya dapat membuat pola makan kurang seimbang.',
+    ],
     ingredients: [
       Ingredient(name: 'Mi kuning tebal', quantity: 500, unit: 'gram'),
       Ingredient(
@@ -69,6 +80,17 @@ const List<Recipe> kAcehRecipes = [
     cookTimeMinutes: 60,
     servings: 4,
     tags: ['sayur', 'santan', 'tradisional', 'pliek u', 'fermentasi'],
+    positiveImpacts: [
+      'Sayuran menyediakan serat, vitamin, dan mineral.',
+      'Memanfaatkan bahan pangan lokal yang mudah ditemukan.',
+      'Membantu melestarikan resep dan budaya kuliner Aceh.',
+      'Dapat menjadi peluang usaha bagi penjual makanan tradisional.',
+    ],
+    negativeImpacts: [
+      'Santan mengandung lemak jenuh sehingga penggunaannya perlu diperhatikan.',
+      'Sayuran yang tidak dicuci dengan baik dapat membawa kotoran atau mikroorganisme.',
+      'Pliek u yang diproses atau disimpan secara tidak higienis dapat menimbulkan risiko kesehatan.',
+    ],
     ingredients: [
       Ingredient(name: 'Pliek u', quantity: 100, unit: 'gram'),
       Ingredient(name: 'Daun melinjo', quantity: 200, unit: 'gram'),
@@ -117,6 +139,17 @@ const List<Recipe> kAcehRecipes = [
     cookTimeMinutes: 75,
     servings: 4,
     tags: ['ayam', 'goreng', 'rempah', 'daun kari', 'temurui'],
+    positiveImpacts: [
+      'Ayam merupakan sumber protein yang membantu pertumbuhan dan perbaikan jaringan tubuh.',
+      'Rempah dan daun aromatik menambah cita rasa makanan.',
+      'Menjadi salah satu identitas kuliner khas Aceh.',
+      'Dapat meningkatkan pendapatan pelaku usaha kuliner.',
+    ],
+    negativeImpacts: [
+      'Proses menggoreng menambah kandungan lemak pada makanan.',
+      'Penggunaan garam berlebihan dapat meningkatkan asupan natrium.',
+      'Minyak yang digunakan berulang kali atau terlalu lama dipanaskan dapat menurunkan kualitas makanan.',
+    ],
     ingredients: [
       Ingredient(name: 'Ayam', quantity: 1, unit: 'ekor', note: 'sekitar 1 kg'),
       Ingredient(name: 'Bawang putih', quantity: 5, unit: 'siung'),
@@ -166,6 +199,18 @@ const List<Recipe> kAcehRecipes = [
     cookTimeMinutes: 120,
     servings: 6,
     tags: ['daging sapi', 'cuka', 'rempah', 'tradisional'],
+    positiveImpacts: [
+      'Daging sapi merupakan sumber protein, zat besi, dan vitamin B12.',
+      'Memperkenalkan teknik pengolahan daging tradisional masyarakat Aceh.',
+      'Dapat menjadi produk kuliner yang memiliki nilai jual.',
+      'Rempah-rempah memberikan aroma dan cita rasa khas.',
+    ],
+    negativeImpacts: [
+      'Konsumsi daging merah dan lemak secara berlebihan kurang baik bagi kesehatan.',
+      'Penggunaan garam berlebihan dapat meningkatkan asupan natrium.',
+      'Cuka dan bumbu asam dapat menimbulkan ketidaknyamanan bagi sebagian orang.',
+      'Penyimpanan yang tidak tepat tetap dapat menyebabkan makanan rusak; penggunaan cuka tidak menjamin keamanan makanan tanpa penanganan yang benar.',
+    ],
     ingredients: [
       Ingredient(name: 'Daging sapi', quantity: 1, unit: 'kg'),
       Ingredient(
@@ -216,6 +261,18 @@ const List<Recipe> kAcehRecipes = [
     cookTimeMinutes: 90,
     servings: 8,
     tags: ['kue', 'tradisional', 'ketan', 'pisang', 'kukus', 'hari raya'],
+    positiveImpacts: [
+      'Pisang dan tepung ketan menyediakan karbohidrat sebagai sumber energi.',
+      'Kelapa mengandung serat dan lemak.',
+      'Melestarikan kue tradisional Aceh yang diwariskan secara turun-temurun.',
+      'Dapat dijadikan peluang usaha rumahan dan oleh-oleh daerah.',
+    ],
+    negativeImpacts: [
+      'Gula merah yang digunakan menambah kandungan gula dalam makanan.',
+      'Konsumsi berlebihan dapat meningkatkan asupan kalori.',
+      'Kue yang disimpan terlalu lama pada suhu ruang dapat mengalami kerusakan.',
+      'Penggunaan daun pisang yang kotor dapat menyebabkan kontaminasi apabila tidak dibersihkan dengan benar.',
+    ],
     ingredients: [
       Ingredient(
         name: 'Tepung ketan',
